@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className='text-white w-screen h-screen flex items-center justify-center bg-purple-600'>
+    <div className='text-white w-screen h-screen flex items-center justify-center bg-purple-300'>
       <div className='max-w-[800px] mx-auto text-center'>
         <p className='text-black font-bold p-2'>Track Your Expenses</p>
         <h1 className='md:text-7xl sm:text-6xl text-4xl text-white font-bold md:py-6'>Spend w Me.</h1>
