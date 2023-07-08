@@ -11,19 +11,19 @@ const Navbar = () => {
 
   return (
     <div className='flex justify-between items-center h-24 max-w-full mx-auto px-4 bg-black text-white'>
-      <h1 className='w-full text-3xl font-bold text-[#521963]'>Spend w Me.</h1>
+      <h1 className='w-full text-3xl font-bold text-[#703483]'>Spend w Me.</h1>
       <ul className='hidden md:flex'>
-        <li className='p-4 hover:scale-105 duration-300 hover:text-[#521963]'><Link to="/">Home</Link></li>
-        <li className='p-4 hover:scale-105 duration-300 hover:text-[#521963]'><Link to="/company">Company</Link></li>
-        <li className='p-4 hover:scale-105 duration-300 hover:text-[#521963]'><Link to="/resources">Resources</Link></li>
-        <li className='p-4 hover:scale-105 duration-300 hover:text-[#521963]'><Link to="/about">About</Link></li>
-        <li className='p-4 hover:scale-105 duration-300 hover:text-[#521963]'><Link to="/contact">Contact</Link></li>
+        <li className='p-4 hover:scale-105 duration-300 hover:text-[#703483]'><Link to="/">Home</Link></li>
+        <li className='p-4 hover:scale-105 duration-300 hover:text-[#703483]'><Link to="/company">Company</Link></li>
+        <li className='p-4 hover:scale-105 duration-300 hover:text-[#703483]'><Link to="/resources">Resources</Link></li>
+        <li className='p-4 hover:scale-105 duration-300 hover:text-[#703483]'><Link to="/about">About</Link></li>
+        <li className='p-4 hover:scale-105 duration-300 hover:text-[#703483]'><Link to="/contact">Contact</Link></li>
       </ul>
       <div onClick={handleNav} className='block md:hidden'>
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
       <div className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500' : 'fixed left-[-100%]'}>
-        <h1 className='w-full text-3xl font-bold text-[#521963] m-4'>Spend w Me.</h1>
+        <h1 className='w-full text-3xl font-bold text-[#703483] m-4'>Spend w Me.</h1>
         <ul className='p-4 uppercase'>
           <li className='p-4 border-b border-gray-600'><Link to="/">Home</Link></li>
           <li className='p-4 border-b border-gray-600'><Link to="/company">Company</Link></li>

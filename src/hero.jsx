@@ -11,7 +11,7 @@ const Hero = () => {
         <div className='flex justify-center items-center'>
           <p className='md:text-5xl sm:text-4xl text-xl font-bold py-4'>Take control of your</p>
           <TypeAnimation
-            className='md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2 text-[#521963]'
+            className='md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2 text-black'
             sequence={[' Spending.', 1000, ' Finances.', 1000]}
             wrapper="span"
             speed={10}
@@ -21,7 +21,7 @@ const Hero = () => {
         <div>
           <p className='md:text-2xl text-xl font-bold text-black'>Monitor and manage your expenses with ease.</p>
           <Link to="/expense-tracker">
-            <button className='bg-[#521963] hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get Started</button>
+            <button className='bg-[#703483] hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get Started</button>
           </Link>
         </div>
       </div>
