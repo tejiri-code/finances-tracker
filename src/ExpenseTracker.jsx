@@ -5,7 +5,7 @@ const ExpenseTracker = () => {
   const [category, setCategory] = useState('');
   const [amount, setAmount] = useState('');
   const [budget, setBudget] = useState(0);
-  const [filteredExpenses, setFilteredExpenses] = useState(expenses);
+  const [filteredExpenses, setFilteredExpenses] = useState([]);
 
   const handleCategoryChange = (e) => {
     setCategory(e.target.value);
@@ -164,7 +164,7 @@ const ExpenseTracker = () => {
             </label>
             <select
               id="filterCategory"
-              value="all"
+              value={category}
               onChange={(e) => handleFilterExpenses(e.target.value)}
               className="border border-gray-300 px-3 py-2 rounded-md w-full focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             >
@@ -177,11 +177,28 @@ const ExpenseTracker = () => {
             </select>
           </div>
           {/* Render categorized expenses */}
+          {category === "all" ? (
+            <ul>
+              {expenses.map((expense, index) => (
+                <li key={index}>
+                  {/* Render expense details */}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <ul>
+              {filteredExpenses.map((expense, index) => (
+                <li key={index}>
+                  {/* Render filtered expense details */}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
       <div className="mt-8 max-w-3xl mx-auto bg-white rounded-lg overflow-hidden shadow-md">
         <div className="px-6 py-4">
-          <h2 className="text-xl font-bold mb-2 text-white">Reports:</h2>
+          <h2 className="text-xl font-bold mb-2 text-[#521963]">Reports:</h2>
           <p className="text-gray-600">Generate reports to visualize your spending habits.</p>
           {/* Add report generation and visualization logic using charting libraries */}
         </div>
